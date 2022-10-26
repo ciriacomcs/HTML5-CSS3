@@ -3,4 +3,4 @@
 
  Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
-<a href="https://github.com/ciriacomcs/HTML5-CSS3/estudos/exercicios/ex001/index.html">Executar a página Android!</a>
+<a href="https://ciriacomcs.github.io/HTML5-CSS3/estudos/desafios/d010/android.html">Executar a página Android!</a>
