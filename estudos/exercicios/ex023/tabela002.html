@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,9 +21,26 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {         /* Fixar cabeçalho */
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {         /* Efeito zebrado */
+            background-color: lightgray;
         }
 
         td.num {
@@ -35,6 +53,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -44,11 +63,12 @@
     -->
 </body>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 50px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -191,9 +211,10 @@
         <tfoot>
             <tr>
                 <td></td>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num" id="total"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere voluptas eos. Soluta officia laudantium, quo tempora consequuntur reprehenderit, ipsam nesciunt dicta a adipisci odit, veniam commodi repellendus illum quam.lo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quia alias expedita necessitatibus vitae possimus natus, sed deleniti nesciunt provident, eveniet veritatis cum ut aspernatur inventore minima. Suscipit, quis nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In blanditiis enim eos illum, quia commodi praesentium odit tempore sunt quisquam quidem perferendis tempora. Officiis possimus rem cupiditate! Ducimus, quia harum!</p>
 </html>
