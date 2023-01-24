@@ -14,8 +14,8 @@
             border-collapse: collapse;
         }
 
-        tr:nth-child(2n) {
-            background-color: lightgrey;
+        tr.titulo {
+            background-color: grey;
         }
 
         th, td {
@@ -36,13 +36,13 @@
 <body>
     <table>
         <thead>
-            <tr>
+            <tr class="titulo">
                 <th rowspan="2">Área</th>
                 <th rowspan="2">Disciplinas</th>
                 <th colspan="2">Notas</th>
                 <th rowspan="2">Média</th>
             </tr>
-            <tr>
+            <tr class="titulo">
                 <th>Nota 1</th>
                 <th>Nota 2</th>
             </tr>
@@ -73,7 +73,7 @@
                 <td class="nota">0.0</td>
                 <td class="nota">0.0</td>
             </tr>
-            <tr>
+            <tr class="titulo">
                 <th colspan="4" style="text-align: left; color: white;">Média de Exatas</th>
                 <td class="nota">0.0</td>
             </tr>
@@ -90,7 +90,7 @@
                 <td class="nota">0.0</td>
                 <td class="nota">0.0</td>
             </tr>
-            <tr>
+            <tr class="titulo">
                 <th colspan="4" style="text-align: left; color: white;">Média de Humanas</th>
                 <td class="nota">0.0</td>
             </tr>
